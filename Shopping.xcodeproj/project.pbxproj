@@ -12,7 +12,6 @@
 		8ED777321BB388080029A958 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8ED777311BB388070029A958 /* Images.xcassets */; };
 		8ED777351BB388080029A958 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8ED777331BB388080029A958 /* LaunchScreen.xib */; };
 		8ED777411BB388080029A958 /* ShoppingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED777401BB388080029A958 /* ShoppingTests.swift */; };
-		8ED777511BB38CD00029A958 /* ShouYeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED777501BB38CD00029A958 /* ShouYeTableViewController.swift */; };
 		8ED777531BB38D230029A958 /* TuanGouTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED777521BB38D230029A958 /* TuanGouTableViewController.swift */; };
 		8ED777571BB38D7B0029A958 /* FuJinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED777561BB38D7B0029A958 /* FuJinViewController.swift */; };
 		8ED777591BB38DAE0029A958 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED777581BB38DAE0029A958 /* MainTabBarViewController.swift */; };
@@ -88,6 +87,8 @@
 		8ED777E91BB396FD0029A958 /* theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED777E81BB396FD0029A958 /* theme.swift */; };
 		8ED777ED1BB3EE9A0029A958 /* headView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED777EC1BB3EE9A0029A958 /* headView.swift */; };
 		8ED777F11BB3F0AB0029A958 /* headView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8ED777F01BB3F0AB0029A958 /* headView.xib */; };
+		8ED777F41BB3FF2C0029A958 /* ShouYeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED777F21BB3FF2C0029A958 /* ShouYeTableViewController.swift */; };
+		8ED777F51BB3FF2C0029A958 /* ShouYeTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8ED777F31BB3FF2C0029A958 /* ShouYeTableViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,7 +111,6 @@
 		8ED7773A1BB388080029A958 /* ShoppingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShoppingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ED7773F1BB388080029A958 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8ED777401BB388080029A958 /* ShoppingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingTests.swift; sourceTree = "<group>"; };
-		8ED777501BB38CD00029A958 /* ShouYeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShouYeTableViewController.swift; path = "首页/ShouYeTableViewController.swift"; sourceTree = "<group>"; };
 		8ED777521BB38D230029A958 /* TuanGouTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TuanGouTableViewController.swift; path = "团购/TuanGouTableViewController.swift"; sourceTree = "<group>"; };
 		8ED777561BB38D7B0029A958 /* FuJinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FuJinViewController.swift; path = "附近/FuJinViewController.swift"; sourceTree = "<group>"; };
 		8ED777581BB38DAE0029A958 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainTabBarViewController.swift; path = main/MainTabBarViewController.swift; sourceTree = "<group>"; };
@@ -186,6 +186,8 @@
 		8ED777E81BB396FD0029A958 /* theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = theme.swift; path = other/theme.swift; sourceTree = "<group>"; };
 		8ED777EC1BB3EE9A0029A958 /* headView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = headView.swift; path = "首页/view/headView.swift"; sourceTree = "<group>"; };
 		8ED777F01BB3F0AB0029A958 /* headView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = headView.xib; sourceTree = "<group>"; };
+		8ED777F21BB3FF2C0029A958 /* ShouYeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShouYeTableViewController.swift; path = "首页/controller/ShouYeTableViewController.swift"; sourceTree = "<group>"; };
+		8ED777F31BB3FF2C0029A958 /* ShouYeTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ShouYeTableViewController.xib; path = "首页/controller/ShouYeTableViewController.xib"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -387,7 +389,8 @@
 		8ED777EE1BB3EEA10029A958 /* controller */ = {
 			isa = PBXGroup;
 			children = (
-				8ED777501BB38CD00029A958 /* ShouYeTableViewController.swift */,
+				8ED777F21BB3FF2C0029A958 /* ShouYeTableViewController.swift */,
+				8ED777F31BB3FF2C0029A958 /* ShouYeTableViewController.xib */,
 			);
 			name = controller;
 			sourceTree = "<group>";
@@ -547,6 +550,7 @@
 				8ED777D91BB391D20029A958 /* 首页_14@2x.png in Resources */,
 				8ED777C91BB391D20029A958 /* 我的－登录_24@2x.png in Resources */,
 				8ED777D71BB391D20029A958 /* 首页_12@2x.png in Resources */,
+				8ED777F51BB3FF2C0029A958 /* ShouYeTableViewController.xib in Resources */,
 				8ED777DB1BB391D20029A958 /* 首页_16@2x.png in Resources */,
 				8ED777A01BB391D20029A958 /* searchBar_back.png in Resources */,
 				8ED777AE1BB391D20029A958 /* 团购_全部分类_美食_43@2x.png in Resources */,
@@ -575,8 +579,8 @@
 				8ED777571BB38D7B0029A958 /* FuJinViewController.swift in Sources */,
 				8ED777591BB38DAE0029A958 /* MainTabBarViewController.swift in Sources */,
 				8ED777E91BB396FD0029A958 /* theme.swift in Sources */,
-				8ED777511BB38CD00029A958 /* ShouYeTableViewController.swift in Sources */,
 				8ED777ED1BB3EE9A0029A958 /* headView.swift in Sources */,
+				8ED777F41BB3FF2C0029A958 /* ShouYeTableViewController.swift in Sources */,
 				8ED7772B1BB388070029A958 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -773,6 +777,7 @@
 				8ED777461BB388080029A958 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8ED777471BB388080029A958 /* Build configuration list for PBXNativeTarget "ShoppingTests" */ = {
 			isa = XCConfigurationList;
@@ -781,6 +786,7 @@
 				8ED777491BB388080029A958 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
