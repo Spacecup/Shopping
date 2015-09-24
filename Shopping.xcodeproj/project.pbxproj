@@ -1,0 +1,788 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8ED7772B1BB388070029A958 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED7772A1BB388070029A958 /* AppDelegate.swift */; };
+		8ED777301BB388070029A958 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8ED7772E1BB388070029A958 /* Main.storyboard */; };
+		8ED777321BB388080029A958 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8ED777311BB388070029A958 /* Images.xcassets */; };
+		8ED777351BB388080029A958 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8ED777331BB388080029A958 /* LaunchScreen.xib */; };
+		8ED777411BB388080029A958 /* ShoppingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED777401BB388080029A958 /* ShoppingTests.swift */; };
+		8ED777511BB38CD00029A958 /* ShouYeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED777501BB38CD00029A958 /* ShouYeTableViewController.swift */; };
+		8ED777531BB38D230029A958 /* TuanGouTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED777521BB38D230029A958 /* TuanGouTableViewController.swift */; };
+		8ED777571BB38D7B0029A958 /* FuJinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED777561BB38D7B0029A958 /* FuJinViewController.swift */; };
+		8ED777591BB38DAE0029A958 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED777581BB38DAE0029A958 /* MainTabBarViewController.swift */; };
+		8ED7779F1BB391D20029A958 /* search_03@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED7775B1BB391D20029A958 /* search_03@2x.png */; };
+		8ED777A01BB391D20029A958 /* searchBar_back.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED7775C1BB391D20029A958 /* searchBar_back.png */; };
+		8ED777A11BB391D20029A958 /* 团购_全城_03@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED7775D1BB391D20029A958 /* 团购_全城_03@2x.png */; };
+		8ED777A21BB391D20029A958 /* 团购_全城_07@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED7775E1BB391D20029A958 /* 团购_全城_07@2x.png */; };
+		8ED777A31BB391D20029A958 /* 团购_全部分类_美食_03@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED7775F1BB391D20029A958 /* 团购_全部分类_美食_03@2x.png */; };
+		8ED777A41BB391D20029A958 /* 团购_全部分类_美食_05@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED777601BB391D20029A958 /* 团购_全部分类_美食_05@2x.png */; };
+		8ED777A51BB391D20029A958 /* 团购_全部分类_美食_11@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED777611BB391D20029A958 /* 团购_全部分类_美食_11@2x.png */; };
+		8ED777A61BB391D20029A958 /* 团购_全部分类_美食_12@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED777621BB391D20029A958 /* 团购_全部分类_美食_12@2x.png */; };
+		8ED777A71BB391D20029A958 /* 团购_全部分类_美食_21@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED777631BB391D20029A958 /* 团购_全部分类_美食_21@2x.png */; };
+		8ED777A81BB391D20029A958 /* 团购_全部分类_美食_24@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED777641BB391D20029A958 /* 团购_全部分类_美食_24@2x.png */; };
+		8ED777A91BB391D20029A958 /* 团购_全部分类_美食_28@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED777651BB391D20029A958 /* 团购_全部分类_美食_28@2x.png */; };
+		8ED777AA1BB391D20029A958 /* 团购_全部分类_美食_31@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED777661BB391D20029A958 /* 团购_全部分类_美食_31@2x.png */; };
+		8ED777AB1BB391D20029A958 /* 团购_全部分类_美食_34@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED777671BB391D20029A958 /* 团购_全部分类_美食_34@2x.png */; };
+		8ED777AC1BB391D20029A958 /* 团购_全部分类_美食_38@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED777681BB391D20029A958 /* 团购_全部分类_美食_38@2x.png */; };
+		8ED777AD1BB391D20029A958 /* 团购_全部分类_美食_40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED777691BB391D20029A958 /* 团购_全部分类_美食_40@2x.png */; };
+		8ED777AE1BB391D20029A958 /* 团购_全部分类_美食_43@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED7776A1BB391D20029A958 /* 团购_全部分类_美食_43@2x.png */; };
+		8ED777AF1BB391D20029A958 /* 团购_全部分类_美食_47@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED7776B1BB391D20029A958 /* 团购_全部分类_美食_47@2x.png */; };
+		8ED777B01BB391D20029A958 /* 团购_商户分类_03@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED7776C1BB391D20029A958 /* 团购_商户分类_03@2x.png */; };
+		8ED777B11BB391D20029A958 /* 团购_商户分类_11@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED7776D1BB391D20029A958 /* 团购_商户分类_11@2x.png */; };
+		8ED777B21BB391D20029A958 /* 团购_商户分类star5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED7776E1BB391D20029A958 /* 团购_商户分类star5@2x.png */; };
+		8ED777B31BB391D20029A958 /* 团购_商户分类stare1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED7776F1BB391D20029A958 /* 团购_商户分类stare1@2x.png */; };
+		8ED777B41BB391D20029A958 /* 团购_商户分类stare2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED777701BB391D20029A958 /* 团购_商户分类stare2@2x.png */; };
+		8ED777B51BB391D20029A958 /* 团购_商户分类stare3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED777711BB391D20029A958 /* 团购_商户分类stare3@2x.png */; };
+		8ED777B61BB391D20029A958 /* 团购_商户分类stare4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED777721BB391D20029A958 /* 团购_商户分类stare4@2x.png */; };
+		8ED777B71BB391D20029A958 /* 屏幕快照 2015-03-28 下午3.25.16.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED777731BB391D20029A958 /* 屏幕快照 2015-03-28 下午3.25.16.png */; };
+		8ED777B81BB391D20029A958 /* 引导页－1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8ED777741BB391D20029A958 /* 引导页－1.jpg */; };
+		8ED777B91BB391D20029A958 /* 引导页－2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8ED777751BB391D20029A958 /* 引导页－2.jpg */; };
+		8ED777BA1BB391D20029A958 /* 引导页－3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8ED777761BB391D20029A958 /* 引导页－3.jpg */; };
+		8ED777BB1BB391D20029A958 /* 我的－主页_03@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED777771BB391D20029A958 /* 我的－主页_03@2x.png */; };
+		8ED777BC1BB391D20029A958 /* 我的－我的账户_03@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED777781BB391D20029A958 /* 我的－我的账户_03@2x.png */; };
+		8ED777BD1BB391D20029A958 /* 我的－我的账户_07@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED777791BB391D20029A958 /* 我的－我的账户_07@2x.png */; };
+		8ED777BE1BB391D20029A958 /* 我的－我的账户_10@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED7777A1BB391D20029A958 /* 我的－我的账户_10@2x.png */; };
+		8ED777BF1BB391D20029A958 /* 我的－我的账户_14@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED7777B1BB391D20029A958 /* 我的－我的账户_14@2x.png */; };
+		8ED777C01BB391D20029A958 /* 我的－我的账户_17@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED7777C1BB391D20029A958 /* 我的－我的账户_17@2x.png */; };
+		8ED777C11BB391D20029A958 /* 我的－登录_02@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED7777D1BB391D20029A958 /* 我的－登录_02@2x.png */; };
+		8ED777C21BB391D20029A958 /* 我的－登录_03@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED7777E1BB391D20029A958 /* 我的－登录_03@2x.png */; };
+		8ED777C31BB391D20029A958 /* 我的－登录_06@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED7777F1BB391D20029A958 /* 我的－登录_06@2x.png */; };
+		8ED777C41BB391D20029A958 /* 我的－登录_10@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED777801BB391D20029A958 /* 我的－登录_10@2x.png */; };
+		8ED777C51BB391D20029A958 /* 我的－登录_12@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED777811BB391D20029A958 /* 我的－登录_12@2x.png */; };
+		8ED777C61BB391D20029A958 /* 我的－登录_15@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED777821BB391D20029A958 /* 我的－登录_15@2x.png */; };
+		8ED777C71BB391D20029A958 /* 我的－登录_17@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED777831BB391D20029A958 /* 我的－登录_17@2x.png */; };
+		8ED777C81BB391D20029A958 /* 我的－登录_21@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED777841BB391D20029A958 /* 我的－登录_21@2x.png */; };
+		8ED777C91BB391D20029A958 /* 我的－登录_24@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED777851BB391D20029A958 /* 我的－登录_24@2x.png */; };
+		8ED777CA1BB391D20029A958 /* 我的－登录_28@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED777861BB391D20029A958 /* 我的－登录_28@2x.png */; };
+		8ED777CB1BB391D20029A958 /* 我的－登录_32@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED777871BB391D20029A958 /* 我的－登录_32@2x.png */; };
+		8ED777CC1BB391D20029A958 /* 我的－登录_35@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED777881BB391D20029A958 /* 我的－登录_35@2x.png */; };
+		8ED777CD1BB391D20029A958 /* 设置_03.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED777891BB391D20029A958 /* 设置_03.png */; };
+		8ED777CE1BB391D20029A958 /* 设置_07@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED7778A1BB391D20029A958 /* 设置_07@2x.png */; };
+		8ED777CF1BB391D20029A958 /* 设置_11@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED7778B1BB391D20029A958 /* 设置_11@2x.png */; };
+		8ED777D01BB391D20029A958 /* 设置_13@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED7778C1BB391D20029A958 /* 设置_13@2x.png */; };
+		8ED777D11BB391D20029A958 /* 设置_16@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED7778D1BB391D20029A958 /* 设置_16@2x.png */; };
+		8ED777D21BB391D20029A958 /* 设置_18@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED7778E1BB391D20029A958 /* 设置_18@2x.png */; };
+		8ED777D31BB391D20029A958 /* 首页0_03.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED7778F1BB391D20029A958 /* 首页0_03.png */; };
+		8ED777D41BB391D20029A958 /* 首页_03@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED777901BB391D20029A958 /* 首页_03@2x.png */; };
+		8ED777D51BB391D20029A958 /* 首页_06@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED777911BB391D20029A958 /* 首页_06@2x.png */; };
+		8ED777D61BB391D20029A958 /* 首页_11@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED777921BB391D20029A958 /* 首页_11@2x.png */; };
+		8ED777D71BB391D20029A958 /* 首页_12@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED777931BB391D20029A958 /* 首页_12@2x.png */; };
+		8ED777D81BB391D20029A958 /* 首页_13@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED777941BB391D20029A958 /* 首页_13@2x.png */; };
+		8ED777D91BB391D20029A958 /* 首页_14@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED777951BB391D20029A958 /* 首页_14@2x.png */; };
+		8ED777DA1BB391D20029A958 /* 首页_15@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED777961BB391D20029A958 /* 首页_15@2x.png */; };
+		8ED777DB1BB391D20029A958 /* 首页_16@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED777971BB391D20029A958 /* 首页_16@2x.png */; };
+		8ED777DC1BB391D20029A958 /* 首页_17@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED777981BB391D20029A958 /* 首页_17@2x.png */; };
+		8ED777DD1BB391D20029A958 /* 首页_18@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED777991BB391D20029A958 /* 首页_18@2x.png */; };
+		8ED777DE1BB391D20029A958 /* 首页_32@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED7779A1BB391D20029A958 /* 首页_32@2x.png */; };
+		8ED777DF1BB391D20029A958 /* 首页_35@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED7779B1BB391D20029A958 /* 首页_35@2x.png */; };
+		8ED777E01BB391D20029A958 /* 首页_GPS定位系统_03@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED7779C1BB391D20029A958 /* 首页_GPS定位系统_03@2x.png */; };
+		8ED777E11BB391D20029A958 /* 首页_GPS定位系统_06_03@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED7779D1BB391D20029A958 /* 首页_GPS定位系统_06_03@2x.png */; };
+		8ED777E21BB391D20029A958 /* 首页_GPS定位系统_07@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED7779E1BB391D20029A958 /* 首页_GPS定位系统_07@2x.png */; };
+		8ED777E41BB392530029A958 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED777E31BB392530029A958 /* MainNavigationController.swift */; };
+		8ED777E91BB396FD0029A958 /* theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED777E81BB396FD0029A958 /* theme.swift */; };
+		8ED777ED1BB3EE9A0029A958 /* headView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED777EC1BB3EE9A0029A958 /* headView.swift */; };
+		8ED777F11BB3F0AB0029A958 /* headView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8ED777F01BB3F0AB0029A958 /* headView.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8ED7773B1BB388080029A958 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8ED7771D1BB388070029A958 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8ED777241BB388070029A958;
+			remoteInfo = Shopping;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8ED777251BB388070029A958 /* Shopping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shopping.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8ED777291BB388070029A958 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8ED7772A1BB388070029A958 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8ED7772F1BB388070029A958 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8ED777311BB388070029A958 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8ED777341BB388080029A958 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		8ED7773A1BB388080029A958 /* ShoppingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShoppingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8ED7773F1BB388080029A958 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8ED777401BB388080029A958 /* ShoppingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingTests.swift; sourceTree = "<group>"; };
+		8ED777501BB38CD00029A958 /* ShouYeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShouYeTableViewController.swift; path = "首页/ShouYeTableViewController.swift"; sourceTree = "<group>"; };
+		8ED777521BB38D230029A958 /* TuanGouTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TuanGouTableViewController.swift; path = "团购/TuanGouTableViewController.swift"; sourceTree = "<group>"; };
+		8ED777561BB38D7B0029A958 /* FuJinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FuJinViewController.swift; path = "附近/FuJinViewController.swift"; sourceTree = "<group>"; };
+		8ED777581BB38DAE0029A958 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainTabBarViewController.swift; path = main/MainTabBarViewController.swift; sourceTree = "<group>"; };
+		8ED7775B1BB391D20029A958 /* search_03@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search_03@2x.png"; sourceTree = "<group>"; };
+		8ED7775C1BB391D20029A958 /* searchBar_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = searchBar_back.png; sourceTree = "<group>"; };
+		8ED7775D1BB391D20029A958 /* 团购_全城_03@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "团购_全城_03@2x.png"; sourceTree = "<group>"; };
+		8ED7775E1BB391D20029A958 /* 团购_全城_07@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "团购_全城_07@2x.png"; sourceTree = "<group>"; };
+		8ED7775F1BB391D20029A958 /* 团购_全部分类_美食_03@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "团购_全部分类_美食_03@2x.png"; sourceTree = "<group>"; };
+		8ED777601BB391D20029A958 /* 团购_全部分类_美食_05@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "团购_全部分类_美食_05@2x.png"; sourceTree = "<group>"; };
+		8ED777611BB391D20029A958 /* 团购_全部分类_美食_11@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "团购_全部分类_美食_11@2x.png"; sourceTree = "<group>"; };
+		8ED777621BB391D20029A958 /* 团购_全部分类_美食_12@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "团购_全部分类_美食_12@2x.png"; sourceTree = "<group>"; };
+		8ED777631BB391D20029A958 /* 团购_全部分类_美食_21@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "团购_全部分类_美食_21@2x.png"; sourceTree = "<group>"; };
+		8ED777641BB391D20029A958 /* 团购_全部分类_美食_24@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "团购_全部分类_美食_24@2x.png"; sourceTree = "<group>"; };
+		8ED777651BB391D20029A958 /* 团购_全部分类_美食_28@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "团购_全部分类_美食_28@2x.png"; sourceTree = "<group>"; };
+		8ED777661BB391D20029A958 /* 团购_全部分类_美食_31@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "团购_全部分类_美食_31@2x.png"; sourceTree = "<group>"; };
+		8ED777671BB391D20029A958 /* 团购_全部分类_美食_34@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "团购_全部分类_美食_34@2x.png"; sourceTree = "<group>"; };
+		8ED777681BB391D20029A958 /* 团购_全部分类_美食_38@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "团购_全部分类_美食_38@2x.png"; sourceTree = "<group>"; };
+		8ED777691BB391D20029A958 /* 团购_全部分类_美食_40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "团购_全部分类_美食_40@2x.png"; sourceTree = "<group>"; };
+		8ED7776A1BB391D20029A958 /* 团购_全部分类_美食_43@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "团购_全部分类_美食_43@2x.png"; sourceTree = "<group>"; };
+		8ED7776B1BB391D20029A958 /* 团购_全部分类_美食_47@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "团购_全部分类_美食_47@2x.png"; sourceTree = "<group>"; };
+		8ED7776C1BB391D20029A958 /* 团购_商户分类_03@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "团购_商户分类_03@2x.png"; sourceTree = "<group>"; };
+		8ED7776D1BB391D20029A958 /* 团购_商户分类_11@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "团购_商户分类_11@2x.png"; sourceTree = "<group>"; };
+		8ED7776E1BB391D20029A958 /* 团购_商户分类star5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "团购_商户分类star5@2x.png"; sourceTree = "<group>"; };
+		8ED7776F1BB391D20029A958 /* 团购_商户分类stare1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "团购_商户分类stare1@2x.png"; sourceTree = "<group>"; };
+		8ED777701BB391D20029A958 /* 团购_商户分类stare2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "团购_商户分类stare2@2x.png"; sourceTree = "<group>"; };
+		8ED777711BB391D20029A958 /* 团购_商户分类stare3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "团购_商户分类stare3@2x.png"; sourceTree = "<group>"; };
+		8ED777721BB391D20029A958 /* 团购_商户分类stare4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "团购_商户分类stare4@2x.png"; sourceTree = "<group>"; };
+		8ED777731BB391D20029A958 /* 屏幕快照 2015-03-28 下午3.25.16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "屏幕快照 2015-03-28 下午3.25.16.png"; sourceTree = "<group>"; };
+		8ED777741BB391D20029A958 /* 引导页－1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "引导页－1.jpg"; sourceTree = "<group>"; };
+		8ED777751BB391D20029A958 /* 引导页－2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "引导页－2.jpg"; sourceTree = "<group>"; };
+		8ED777761BB391D20029A958 /* 引导页－3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "引导页－3.jpg"; sourceTree = "<group>"; };
+		8ED777771BB391D20029A958 /* 我的－主页_03@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "我的－主页_03@2x.png"; sourceTree = "<group>"; };
+		8ED777781BB391D20029A958 /* 我的－我的账户_03@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "我的－我的账户_03@2x.png"; sourceTree = "<group>"; };
+		8ED777791BB391D20029A958 /* 我的－我的账户_07@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "我的－我的账户_07@2x.png"; sourceTree = "<group>"; };
+		8ED7777A1BB391D20029A958 /* 我的－我的账户_10@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "我的－我的账户_10@2x.png"; sourceTree = "<group>"; };
+		8ED7777B1BB391D20029A958 /* 我的－我的账户_14@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "我的－我的账户_14@2x.png"; sourceTree = "<group>"; };
+		8ED7777C1BB391D20029A958 /* 我的－我的账户_17@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "我的－我的账户_17@2x.png"; sourceTree = "<group>"; };
+		8ED7777D1BB391D20029A958 /* 我的－登录_02@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "我的－登录_02@2x.png"; sourceTree = "<group>"; };
+		8ED7777E1BB391D20029A958 /* 我的－登录_03@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "我的－登录_03@2x.png"; sourceTree = "<group>"; };
+		8ED7777F1BB391D20029A958 /* 我的－登录_06@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "我的－登录_06@2x.png"; sourceTree = "<group>"; };
+		8ED777801BB391D20029A958 /* 我的－登录_10@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "我的－登录_10@2x.png"; sourceTree = "<group>"; };
+		8ED777811BB391D20029A958 /* 我的－登录_12@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "我的－登录_12@2x.png"; sourceTree = "<group>"; };
+		8ED777821BB391D20029A958 /* 我的－登录_15@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "我的－登录_15@2x.png"; sourceTree = "<group>"; };
+		8ED777831BB391D20029A958 /* 我的－登录_17@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "我的－登录_17@2x.png"; sourceTree = "<group>"; };
+		8ED777841BB391D20029A958 /* 我的－登录_21@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "我的－登录_21@2x.png"; sourceTree = "<group>"; };
+		8ED777851BB391D20029A958 /* 我的－登录_24@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "我的－登录_24@2x.png"; sourceTree = "<group>"; };
+		8ED777861BB391D20029A958 /* 我的－登录_28@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "我的－登录_28@2x.png"; sourceTree = "<group>"; };
+		8ED777871BB391D20029A958 /* 我的－登录_32@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "我的－登录_32@2x.png"; sourceTree = "<group>"; };
+		8ED777881BB391D20029A958 /* 我的－登录_35@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "我的－登录_35@2x.png"; sourceTree = "<group>"; };
+		8ED777891BB391D20029A958 /* 设置_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "设置_03.png"; sourceTree = "<group>"; };
+		8ED7778A1BB391D20029A958 /* 设置_07@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "设置_07@2x.png"; sourceTree = "<group>"; };
+		8ED7778B1BB391D20029A958 /* 设置_11@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "设置_11@2x.png"; sourceTree = "<group>"; };
+		8ED7778C1BB391D20029A958 /* 设置_13@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "设置_13@2x.png"; sourceTree = "<group>"; };
+		8ED7778D1BB391D20029A958 /* 设置_16@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "设置_16@2x.png"; sourceTree = "<group>"; };
+		8ED7778E1BB391D20029A958 /* 设置_18@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "设置_18@2x.png"; sourceTree = "<group>"; };
+		8ED7778F1BB391D20029A958 /* 首页0_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "首页0_03.png"; sourceTree = "<group>"; };
+		8ED777901BB391D20029A958 /* 首页_03@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "首页_03@2x.png"; sourceTree = "<group>"; };
+		8ED777911BB391D20029A958 /* 首页_06@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "首页_06@2x.png"; sourceTree = "<group>"; };
+		8ED777921BB391D20029A958 /* 首页_11@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "首页_11@2x.png"; sourceTree = "<group>"; };
+		8ED777931BB391D20029A958 /* 首页_12@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "首页_12@2x.png"; sourceTree = "<group>"; };
+		8ED777941BB391D20029A958 /* 首页_13@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "首页_13@2x.png"; sourceTree = "<group>"; };
+		8ED777951BB391D20029A958 /* 首页_14@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "首页_14@2x.png"; sourceTree = "<group>"; };
+		8ED777961BB391D20029A958 /* 首页_15@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "首页_15@2x.png"; sourceTree = "<group>"; };
+		8ED777971BB391D20029A958 /* 首页_16@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "首页_16@2x.png"; sourceTree = "<group>"; };
+		8ED777981BB391D20029A958 /* 首页_17@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "首页_17@2x.png"; sourceTree = "<group>"; };
+		8ED777991BB391D20029A958 /* 首页_18@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "首页_18@2x.png"; sourceTree = "<group>"; };
+		8ED7779A1BB391D20029A958 /* 首页_32@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "首页_32@2x.png"; sourceTree = "<group>"; };
+		8ED7779B1BB391D20029A958 /* 首页_35@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "首页_35@2x.png"; sourceTree = "<group>"; };
+		8ED7779C1BB391D20029A958 /* 首页_GPS定位系统_03@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "首页_GPS定位系统_03@2x.png"; sourceTree = "<group>"; };
+		8ED7779D1BB391D20029A958 /* 首页_GPS定位系统_06_03@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "首页_GPS定位系统_06_03@2x.png"; sourceTree = "<group>"; };
+		8ED7779E1BB391D20029A958 /* 首页_GPS定位系统_07@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "首页_GPS定位系统_07@2x.png"; sourceTree = "<group>"; };
+		8ED777E31BB392530029A958 /* MainNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
+		8ED777E81BB396FD0029A958 /* theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = theme.swift; path = other/theme.swift; sourceTree = "<group>"; };
+		8ED777EC1BB3EE9A0029A958 /* headView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = headView.swift; path = "首页/view/headView.swift"; sourceTree = "<group>"; };
+		8ED777F01BB3F0AB0029A958 /* headView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = headView.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8ED777221BB388070029A958 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8ED777371BB388080029A958 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8ED7771C1BB388070029A958 = {
+			isa = PBXGroup;
+			children = (
+				8ED777271BB388070029A958 /* Shopping */,
+				8ED7773D1BB388080029A958 /* ShoppingTests */,
+				8ED777261BB388070029A958 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8ED777261BB388070029A958 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8ED777251BB388070029A958 /* Shopping.app */,
+				8ED7773A1BB388080029A958 /* ShoppingTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8ED777271BB388070029A958 /* Shopping */ = {
+			isa = PBXGroup;
+			children = (
+				8ED7772A1BB388070029A958 /* AppDelegate.swift */,
+				8ED7774F1BB38C860029A958 /* 附近 */,
+				8ED7774E1BB38C750029A958 /* 团购 */,
+				8ED7774D1BB38C550029A958 /* 首页 */,
+				8ED777E51BB395FF0029A958 /* Other */,
+				8ED7774A1BB38BD00029A958 /* main */,
+				8ED7772E1BB388070029A958 /* Main.storyboard */,
+				8ED777311BB388070029A958 /* Images.xcassets */,
+				8ED777331BB388080029A958 /* LaunchScreen.xib */,
+				8ED777281BB388070029A958 /* Supporting Files */,
+			);
+			path = Shopping;
+			sourceTree = "<group>";
+		};
+		8ED777281BB388070029A958 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8ED7775A1BB391D20029A958 /* TuanImgs */,
+				8ED777291BB388070029A958 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8ED7773D1BB388080029A958 /* ShoppingTests */ = {
+			isa = PBXGroup;
+			children = (
+				8ED777401BB388080029A958 /* ShoppingTests.swift */,
+				8ED7773E1BB388080029A958 /* Supporting Files */,
+			);
+			path = ShoppingTests;
+			sourceTree = "<group>";
+		};
+		8ED7773E1BB388080029A958 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8ED7773F1BB388080029A958 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8ED7774A1BB38BD00029A958 /* main */ = {
+			isa = PBXGroup;
+			children = (
+				8ED777581BB38DAE0029A958 /* MainTabBarViewController.swift */,
+				8ED777E31BB392530029A958 /* MainNavigationController.swift */,
+			);
+			name = main;
+			sourceTree = "<group>";
+		};
+		8ED7774D1BB38C550029A958 /* 首页 */ = {
+			isa = PBXGroup;
+			children = (
+				8ED777EF1BB3EEA90029A958 /* view */,
+				8ED777EE1BB3EEA10029A958 /* controller */,
+			);
+			name = "首页";
+			sourceTree = "<group>";
+		};
+		8ED7774E1BB38C750029A958 /* 团购 */ = {
+			isa = PBXGroup;
+			children = (
+				8ED777521BB38D230029A958 /* TuanGouTableViewController.swift */,
+			);
+			name = "团购";
+			sourceTree = "<group>";
+		};
+		8ED7774F1BB38C860029A958 /* 附近 */ = {
+			isa = PBXGroup;
+			children = (
+				8ED777561BB38D7B0029A958 /* FuJinViewController.swift */,
+			);
+			name = "附近";
+			sourceTree = "<group>";
+		};
+		8ED7775A1BB391D20029A958 /* TuanImgs */ = {
+			isa = PBXGroup;
+			children = (
+				8ED7775B1BB391D20029A958 /* search_03@2x.png */,
+				8ED7775C1BB391D20029A958 /* searchBar_back.png */,
+				8ED7775D1BB391D20029A958 /* 团购_全城_03@2x.png */,
+				8ED7775E1BB391D20029A958 /* 团购_全城_07@2x.png */,
+				8ED7775F1BB391D20029A958 /* 团购_全部分类_美食_03@2x.png */,
+				8ED777601BB391D20029A958 /* 团购_全部分类_美食_05@2x.png */,
+				8ED777611BB391D20029A958 /* 团购_全部分类_美食_11@2x.png */,
+				8ED777621BB391D20029A958 /* 团购_全部分类_美食_12@2x.png */,
+				8ED777631BB391D20029A958 /* 团购_全部分类_美食_21@2x.png */,
+				8ED777641BB391D20029A958 /* 团购_全部分类_美食_24@2x.png */,
+				8ED777651BB391D20029A958 /* 团购_全部分类_美食_28@2x.png */,
+				8ED777661BB391D20029A958 /* 团购_全部分类_美食_31@2x.png */,
+				8ED777671BB391D20029A958 /* 团购_全部分类_美食_34@2x.png */,
+				8ED777681BB391D20029A958 /* 团购_全部分类_美食_38@2x.png */,
+				8ED777691BB391D20029A958 /* 团购_全部分类_美食_40@2x.png */,
+				8ED7776A1BB391D20029A958 /* 团购_全部分类_美食_43@2x.png */,
+				8ED7776B1BB391D20029A958 /* 团购_全部分类_美食_47@2x.png */,
+				8ED7776C1BB391D20029A958 /* 团购_商户分类_03@2x.png */,
+				8ED7776D1BB391D20029A958 /* 团购_商户分类_11@2x.png */,
+				8ED7776E1BB391D20029A958 /* 团购_商户分类star5@2x.png */,
+				8ED7776F1BB391D20029A958 /* 团购_商户分类stare1@2x.png */,
+				8ED777701BB391D20029A958 /* 团购_商户分类stare2@2x.png */,
+				8ED777711BB391D20029A958 /* 团购_商户分类stare3@2x.png */,
+				8ED777721BB391D20029A958 /* 团购_商户分类stare4@2x.png */,
+				8ED777731BB391D20029A958 /* 屏幕快照 2015-03-28 下午3.25.16.png */,
+				8ED777741BB391D20029A958 /* 引导页－1.jpg */,
+				8ED777751BB391D20029A958 /* 引导页－2.jpg */,
+				8ED777761BB391D20029A958 /* 引导页－3.jpg */,
+				8ED777771BB391D20029A958 /* 我的－主页_03@2x.png */,
+				8ED777781BB391D20029A958 /* 我的－我的账户_03@2x.png */,
+				8ED777791BB391D20029A958 /* 我的－我的账户_07@2x.png */,
+				8ED7777A1BB391D20029A958 /* 我的－我的账户_10@2x.png */,
+				8ED7777B1BB391D20029A958 /* 我的－我的账户_14@2x.png */,
+				8ED7777C1BB391D20029A958 /* 我的－我的账户_17@2x.png */,
+				8ED7777D1BB391D20029A958 /* 我的－登录_02@2x.png */,
+				8ED7777E1BB391D20029A958 /* 我的－登录_03@2x.png */,
+				8ED7777F1BB391D20029A958 /* 我的－登录_06@2x.png */,
+				8ED777801BB391D20029A958 /* 我的－登录_10@2x.png */,
+				8ED777811BB391D20029A958 /* 我的－登录_12@2x.png */,
+				8ED777821BB391D20029A958 /* 我的－登录_15@2x.png */,
+				8ED777831BB391D20029A958 /* 我的－登录_17@2x.png */,
+				8ED777841BB391D20029A958 /* 我的－登录_21@2x.png */,
+				8ED777851BB391D20029A958 /* 我的－登录_24@2x.png */,
+				8ED777861BB391D20029A958 /* 我的－登录_28@2x.png */,
+				8ED777871BB391D20029A958 /* 我的－登录_32@2x.png */,
+				8ED777881BB391D20029A958 /* 我的－登录_35@2x.png */,
+				8ED777891BB391D20029A958 /* 设置_03.png */,
+				8ED7778A1BB391D20029A958 /* 设置_07@2x.png */,
+				8ED7778B1BB391D20029A958 /* 设置_11@2x.png */,
+				8ED7778C1BB391D20029A958 /* 设置_13@2x.png */,
+				8ED7778D1BB391D20029A958 /* 设置_16@2x.png */,
+				8ED7778E1BB391D20029A958 /* 设置_18@2x.png */,
+				8ED7778F1BB391D20029A958 /* 首页0_03.png */,
+				8ED777901BB391D20029A958 /* 首页_03@2x.png */,
+				8ED777911BB391D20029A958 /* 首页_06@2x.png */,
+				8ED777921BB391D20029A958 /* 首页_11@2x.png */,
+				8ED777931BB391D20029A958 /* 首页_12@2x.png */,
+				8ED777941BB391D20029A958 /* 首页_13@2x.png */,
+				8ED777951BB391D20029A958 /* 首页_14@2x.png */,
+				8ED777961BB391D20029A958 /* 首页_15@2x.png */,
+				8ED777971BB391D20029A958 /* 首页_16@2x.png */,
+				8ED777981BB391D20029A958 /* 首页_17@2x.png */,
+				8ED777991BB391D20029A958 /* 首页_18@2x.png */,
+				8ED7779A1BB391D20029A958 /* 首页_32@2x.png */,
+				8ED7779B1BB391D20029A958 /* 首页_35@2x.png */,
+				8ED7779C1BB391D20029A958 /* 首页_GPS定位系统_03@2x.png */,
+				8ED7779D1BB391D20029A958 /* 首页_GPS定位系统_06_03@2x.png */,
+				8ED7779E1BB391D20029A958 /* 首页_GPS定位系统_07@2x.png */,
+			);
+			path = TuanImgs;
+			sourceTree = "<group>";
+		};
+		8ED777E51BB395FF0029A958 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				8ED777E81BB396FD0029A958 /* theme.swift */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		8ED777EE1BB3EEA10029A958 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				8ED777501BB38CD00029A958 /* ShouYeTableViewController.swift */,
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
+		8ED777EF1BB3EEA90029A958 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				8ED777EC1BB3EE9A0029A958 /* headView.swift */,
+				8ED777F01BB3F0AB0029A958 /* headView.xib */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8ED777241BB388070029A958 /* Shopping */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8ED777441BB388080029A958 /* Build configuration list for PBXNativeTarget "Shopping" */;
+			buildPhases = (
+				8ED777211BB388070029A958 /* Sources */,
+				8ED777221BB388070029A958 /* Frameworks */,
+				8ED777231BB388070029A958 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Shopping;
+			productName = Shopping;
+			productReference = 8ED777251BB388070029A958 /* Shopping.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8ED777391BB388080029A958 /* ShoppingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8ED777471BB388080029A958 /* Build configuration list for PBXNativeTarget "ShoppingTests" */;
+			buildPhases = (
+				8ED777361BB388080029A958 /* Sources */,
+				8ED777371BB388080029A958 /* Frameworks */,
+				8ED777381BB388080029A958 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8ED7773C1BB388080029A958 /* PBXTargetDependency */,
+			);
+			name = ShoppingTests;
+			productName = ShoppingTests;
+			productReference = 8ED7773A1BB388080029A958 /* ShoppingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8ED7771D1BB388070029A958 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = mudy;
+				TargetAttributes = {
+					8ED777241BB388070029A958 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					8ED777391BB388080029A958 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 8ED777241BB388070029A958;
+					};
+				};
+			};
+			buildConfigurationList = 8ED777201BB388070029A958 /* Build configuration list for PBXProject "Shopping" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8ED7771C1BB388070029A958;
+			productRefGroup = 8ED777261BB388070029A958 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8ED777241BB388070029A958 /* Shopping */,
+				8ED777391BB388080029A958 /* ShoppingTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8ED777231BB388070029A958 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8ED777BB1BB391D20029A958 /* 我的－主页_03@2x.png in Resources */,
+				8ED777301BB388070029A958 /* Main.storyboard in Resources */,
+				8ED777CB1BB391D20029A958 /* 我的－登录_32@2x.png in Resources */,
+				8ED777BF1BB391D20029A958 /* 我的－我的账户_14@2x.png in Resources */,
+				8ED777C31BB391D20029A958 /* 我的－登录_06@2x.png in Resources */,
+				8ED777C21BB391D20029A958 /* 我的－登录_03@2x.png in Resources */,
+				8ED777CC1BB391D20029A958 /* 我的－登录_35@2x.png in Resources */,
+				8ED777A21BB391D20029A958 /* 团购_全城_07@2x.png in Resources */,
+				8ED777DD1BB391D20029A958 /* 首页_18@2x.png in Resources */,
+				8ED777AB1BB391D20029A958 /* 团购_全部分类_美食_34@2x.png in Resources */,
+				8ED777BE1BB391D20029A958 /* 我的－我的账户_10@2x.png in Resources */,
+				8ED777D31BB391D20029A958 /* 首页0_03.png in Resources */,
+				8ED777E11BB391D20029A958 /* 首页_GPS定位系统_06_03@2x.png in Resources */,
+				8ED777BD1BB391D20029A958 /* 我的－我的账户_07@2x.png in Resources */,
+				8ED777CE1BB391D20029A958 /* 设置_07@2x.png in Resources */,
+				8ED777E21BB391D20029A958 /* 首页_GPS定位系统_07@2x.png in Resources */,
+				8ED777C71BB391D20029A958 /* 我的－登录_17@2x.png in Resources */,
+				8ED777B91BB391D20029A958 /* 引导页－2.jpg in Resources */,
+				8ED777DE1BB391D20029A958 /* 首页_32@2x.png in Resources */,
+				8ED777DA1BB391D20029A958 /* 首页_15@2x.png in Resources */,
+				8ED777AC1BB391D20029A958 /* 团购_全部分类_美食_38@2x.png in Resources */,
+				8ED777A71BB391D20029A958 /* 团购_全部分类_美食_21@2x.png in Resources */,
+				8ED777B51BB391D20029A958 /* 团购_商户分类stare3@2x.png in Resources */,
+				8ED777C11BB391D20029A958 /* 我的－登录_02@2x.png in Resources */,
+				8ED777A91BB391D20029A958 /* 团购_全部分类_美食_28@2x.png in Resources */,
+				8ED777CD1BB391D20029A958 /* 设置_03.png in Resources */,
+				8ED777AA1BB391D20029A958 /* 团购_全部分类_美食_31@2x.png in Resources */,
+				8ED777C81BB391D20029A958 /* 我的－登录_21@2x.png in Resources */,
+				8ED7779F1BB391D20029A958 /* search_03@2x.png in Resources */,
+				8ED777A11BB391D20029A958 /* 团购_全城_03@2x.png in Resources */,
+				8ED777A41BB391D20029A958 /* 团购_全部分类_美食_05@2x.png in Resources */,
+				8ED777351BB388080029A958 /* LaunchScreen.xib in Resources */,
+				8ED777C41BB391D20029A958 /* 我的－登录_10@2x.png in Resources */,
+				8ED777AD1BB391D20029A958 /* 团购_全部分类_美食_40@2x.png in Resources */,
+				8ED777C61BB391D20029A958 /* 我的－登录_15@2x.png in Resources */,
+				8ED777BC1BB391D20029A958 /* 我的－我的账户_03@2x.png in Resources */,
+				8ED777321BB388080029A958 /* Images.xcassets in Resources */,
+				8ED777B31BB391D20029A958 /* 团购_商户分类stare1@2x.png in Resources */,
+				8ED777D01BB391D20029A958 /* 设置_13@2x.png in Resources */,
+				8ED777E01BB391D20029A958 /* 首页_GPS定位系统_03@2x.png in Resources */,
+				8ED777A51BB391D20029A958 /* 团购_全部分类_美食_11@2x.png in Resources */,
+				8ED777AF1BB391D20029A958 /* 团购_全部分类_美食_47@2x.png in Resources */,
+				8ED777B81BB391D20029A958 /* 引导页－1.jpg in Resources */,
+				8ED777C51BB391D20029A958 /* 我的－登录_12@2x.png in Resources */,
+				8ED777D21BB391D20029A958 /* 设置_18@2x.png in Resources */,
+				8ED777D11BB391D20029A958 /* 设置_16@2x.png in Resources */,
+				8ED777D81BB391D20029A958 /* 首页_13@2x.png in Resources */,
+				8ED777B71BB391D20029A958 /* 屏幕快照 2015-03-28 下午3.25.16.png in Resources */,
+				8ED777C01BB391D20029A958 /* 我的－我的账户_17@2x.png in Resources */,
+				8ED777CF1BB391D20029A958 /* 设置_11@2x.png in Resources */,
+				8ED777F11BB3F0AB0029A958 /* headView.xib in Resources */,
+				8ED777DF1BB391D20029A958 /* 首页_35@2x.png in Resources */,
+				8ED777D41BB391D20029A958 /* 首页_03@2x.png in Resources */,
+				8ED777CA1BB391D20029A958 /* 我的－登录_28@2x.png in Resources */,
+				8ED777B11BB391D20029A958 /* 团购_商户分类_11@2x.png in Resources */,
+				8ED777A31BB391D20029A958 /* 团购_全部分类_美食_03@2x.png in Resources */,
+				8ED777B61BB391D20029A958 /* 团购_商户分类stare4@2x.png in Resources */,
+				8ED777B41BB391D20029A958 /* 团购_商户分类stare2@2x.png in Resources */,
+				8ED777A61BB391D20029A958 /* 团购_全部分类_美食_12@2x.png in Resources */,
+				8ED777B21BB391D20029A958 /* 团购_商户分类star5@2x.png in Resources */,
+				8ED777DC1BB391D20029A958 /* 首页_17@2x.png in Resources */,
+				8ED777D61BB391D20029A958 /* 首页_11@2x.png in Resources */,
+				8ED777BA1BB391D20029A958 /* 引导页－3.jpg in Resources */,
+				8ED777D91BB391D20029A958 /* 首页_14@2x.png in Resources */,
+				8ED777C91BB391D20029A958 /* 我的－登录_24@2x.png in Resources */,
+				8ED777D71BB391D20029A958 /* 首页_12@2x.png in Resources */,
+				8ED777DB1BB391D20029A958 /* 首页_16@2x.png in Resources */,
+				8ED777A01BB391D20029A958 /* searchBar_back.png in Resources */,
+				8ED777AE1BB391D20029A958 /* 团购_全部分类_美食_43@2x.png in Resources */,
+				8ED777D51BB391D20029A958 /* 首页_06@2x.png in Resources */,
+				8ED777A81BB391D20029A958 /* 团购_全部分类_美食_24@2x.png in Resources */,
+				8ED777B01BB391D20029A958 /* 团购_商户分类_03@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8ED777381BB388080029A958 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8ED777211BB388070029A958 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8ED777E41BB392530029A958 /* MainNavigationController.swift in Sources */,
+				8ED777531BB38D230029A958 /* TuanGouTableViewController.swift in Sources */,
+				8ED777571BB38D7B0029A958 /* FuJinViewController.swift in Sources */,
+				8ED777591BB38DAE0029A958 /* MainTabBarViewController.swift in Sources */,
+				8ED777E91BB396FD0029A958 /* theme.swift in Sources */,
+				8ED777511BB38CD00029A958 /* ShouYeTableViewController.swift in Sources */,
+				8ED777ED1BB3EE9A0029A958 /* headView.swift in Sources */,
+				8ED7772B1BB388070029A958 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8ED777361BB388080029A958 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8ED777411BB388080029A958 /* ShoppingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8ED7773C1BB388080029A958 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8ED777241BB388070029A958 /* Shopping */;
+			targetProxy = 8ED7773B1BB388080029A958 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8ED7772E1BB388070029A958 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8ED7772F1BB388070029A958 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8ED777331BB388080029A958 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8ED777341BB388080029A958 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8ED777421BB388080029A958 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8ED777431BB388080029A958 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8ED777451BB388080029A958 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Shopping/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8ED777461BB388080029A958 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Shopping/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8ED777481BB388080029A958 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ShoppingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Shopping.app/Shopping";
+			};
+			name = Debug;
+		};
+		8ED777491BB388080029A958 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ShoppingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Shopping.app/Shopping";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8ED777201BB388070029A958 /* Build configuration list for PBXProject "Shopping" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8ED777421BB388080029A958 /* Debug */,
+				8ED777431BB388080029A958 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8ED777441BB388080029A958 /* Build configuration list for PBXNativeTarget "Shopping" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8ED777451BB388080029A958 /* Debug */,
+				8ED777461BB388080029A958 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8ED777471BB388080029A958 /* Build configuration list for PBXNativeTarget "ShoppingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8ED777481BB388080029A958 /* Debug */,
+				8ED777491BB388080029A958 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8ED7771D1BB388070029A958 /* Project object */;
+}
