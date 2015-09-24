@@ -7,9 +7,17 @@
 //
 
 import UIKit
-
+protocol headViewDelegate:class{//代表这个代理只能被一个类实现
+    func clickedAtNum(clicked: Int)
+    
+}
 
 class headView: UIView {
+  
+   weak  var delegate: headViewDelegate?
     
-       
+    @IBAction func headClick(sender: UIButton) {
+      var clickTag = delegate?.clickedAtNum(sender.tag)
+    }
+    
 }

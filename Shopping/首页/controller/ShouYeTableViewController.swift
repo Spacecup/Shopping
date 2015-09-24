@@ -8,14 +8,23 @@
 
 import UIKit
 
-class ShouYeTableViewController: UITableViewController{
+class ShouYeTableViewController: UITableViewController,headViewDelegate{
     
     override func viewDidLoad() {
         super.viewDidLoad()
         //        title = "首页"
         navigationItem.leftBarButtonItem = setCitySelectedBtn()
         setNavTitleView()
+        let header = NSBundle.mainBundle().loadNibNamed("headView", owner: self, options: nil).last as! headView
+        self.tableView.tableHeaderView = header
         
+        header.delegate = self
+        
+    }
+    
+    
+    func clickedAtNum(clicked: Int) {
+        print("\(clicked)")
     }
     
     func setCitySelectedBtn()->UIBarButtonItem{

@@ -13,7 +13,7 @@ class MainTabBarViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setAllChildVC()
-      
+        
     }
     
     //初始化所有子视图控制器
@@ -27,10 +27,10 @@ class MainTabBarViewController: UITabBarController {
         
     }
     
-    //添加子控制器
+    //将以vc作为跟视图的导航控制器，作为UITabBarController的子控制器
     func tabbarAddChindVC(vc:UIViewController, title:String,imageName:String,selectedImageName:String){
+        
         vc.tabBarItem = UITabBarItem(title: title, image: UIImage(named: imageName), selectedImage: UIImage(named: selectedImageName))
-//        let nav = UINavigationController(rootViewController: vc)
         let nav2 = MainNavigationController(rootViewController: vc)
         
         addChildViewController(nav2)
