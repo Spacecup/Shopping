@@ -108,14 +108,13 @@ class ShouYeTableViewController: UITableViewController,headViewDelegate{
 //        let cell = tableView.dequeueReusableCellWithIdentifier(identify, forIndexPath: indexPath) as! UITableViewCell
 //        
 
-        let cell = UITableViewCell(style:.Default, reuseIdentifier:"myCell")
-        
-        cell.textLabel!.text = "swift cell \(indexPath.row)"
+        let cell = TableViewCell
+//        cell.textLabel!.text = "swift cell \(indexPath.row)"
         
         return cell
         // Configure the cell...
         
-        return cell
+      
     }
     
     

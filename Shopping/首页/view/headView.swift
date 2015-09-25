@@ -17,7 +17,7 @@ class headView: UIView {
    weak  var delegate: headViewDelegate?
     
     @IBAction func headClick(sender: UIButton) {
-      var clickTag = delegate?.clickedAtNum(sender.tag)
+      delegate!.clickedAtNum(sender.tag)
     }
     
 }
