@@ -25,6 +25,8 @@
 		8EA54BCF1BBB779300ACB744 /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA54BC71BBB779300ACB744 /* UIViewExt.swift */; };
 		8EA54BD01BBB779300ACB744 /* YRHttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA54BC81BBB779300ACB744 /* YRHttpRequest.swift */; };
 		8EA54BD11BBB779300ACB744 /* YYHRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA54BC91BBB779300ACB744 /* YYHRequest.swift */; };
+		8EA54BD41BBBB5E400ACB744 /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA54BD21BBBB5E400ACB744 /* CategoryTableViewController.swift */; };
+		8EA54BD51BBBB5E400ACB744 /* CategoryTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EA54BD31BBBB5E400ACB744 /* CategoryTableViewController.xib */; };
 		8ED7772B1BB388070029A958 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED7772A1BB388070029A958 /* AppDelegate.swift */; };
 		8ED777301BB388070029A958 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8ED7772E1BB388070029A958 /* Main.storyboard */; };
 		8ED777321BB388080029A958 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8ED777311BB388070029A958 /* Images.xcassets */; };
@@ -143,6 +145,8 @@
 		8EA54BC71BBB779300ACB744 /* UIViewExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
 		8EA54BC81BBB779300ACB744 /* YRHttpRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YRHttpRequest.swift; sourceTree = "<group>"; };
 		8EA54BC91BBB779300ACB744 /* YYHRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYHRequest.swift; sourceTree = "<group>"; };
+		8EA54BD21BBBB5E400ACB744 /* CategoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CategoryTableViewController.swift; path = "首页/controller/CategoryTableViewController.swift"; sourceTree = "<group>"; };
+		8EA54BD31BBBB5E400ACB744 /* CategoryTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CategoryTableViewController.xib; path = "首页/controller/CategoryTableViewController.xib"; sourceTree = "<group>"; };
 		8ED777251BB388070029A958 /* Shopping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shopping.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ED777291BB388070029A958 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8ED7772A1BB388070029A958 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -536,6 +540,8 @@
 			children = (
 				8ED777F21BB3FF2C0029A958 /* ShouYeTableViewController.swift */,
 				8ED777F31BB3FF2C0029A958 /* ShouYeTableViewController.xib */,
+				8EA54BD21BBBB5E400ACB744 /* CategoryTableViewController.swift */,
+				8EA54BD31BBBB5E400ACB744 /* CategoryTableViewController.xib */,
 			);
 			name = controller;
 			sourceTree = "<group>";
@@ -665,6 +671,7 @@
 				8ED777AA1BB391D20029A958 /* 团购_全部分类_美食_31@2x.png in Resources */,
 				8ED777C81BB391D20029A958 /* 我的－登录_21@2x.png in Resources */,
 				8ED7779F1BB391D20029A958 /* search_03@2x.png in Resources */,
+				8EA54BD51BBBB5E400ACB744 /* CategoryTableViewController.xib in Resources */,
 				8ED777A11BB391D20029A958 /* 团购_全城_03@2x.png in Resources */,
 				8ED777A41BB391D20029A958 /* 团购_全部分类_美食_05@2x.png in Resources */,
 				8ED777351BB388080029A958 /* LaunchScreen.xib in Resources */,
@@ -790,6 +797,7 @@
 				8ED777E91BB396FD0029A958 /* theme.swift in Sources */,
 				8EA54BCF1BBB779300ACB744 /* UIViewExt.swift in Sources */,
 				8EA54BCA1BBB779300ACB744 /* FileUtility.swift in Sources */,
+				8EA54BD41BBBB5E400ACB744 /* CategoryTableViewController.swift in Sources */,
 				8ED777ED1BB3EE9A0029A958 /* headView.swift in Sources */,
 				8EA54BBF1BBB70BD00ACB744 /* dealsViewCell.swift in Sources */,
 				8E7C3A6D1BB4DC12007AF11D /* BusinessInfo.swift in Sources */,
@@ -929,7 +937,7 @@
 				INFOPLIST_FILE = Shopping/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/mudy/Desktop/Shopping/Shopping/Shopping-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Shopping/Shopping-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -943,7 +951,7 @@
 				INFOPLIST_FILE = Shopping/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/mudy/Desktop/Shopping/Shopping/Shopping-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Shopping/Shopping-Bridging-Header.h";
 			};
 			name = Release;
 		};

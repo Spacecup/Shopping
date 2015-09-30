@@ -18,6 +18,7 @@ class headView: UIView {
     
     @IBAction func headClick(sender: UIButton) {
       delegate!.clickedAtNum(sender.tag)
+    
     }
     
 }

@@ -8,12 +8,14 @@
 
 import UIKit
 
-class ShouYeTableViewController: UITableViewController,headViewDelegate,DPRequestDelegate{
+class ShouYeTableViewController: UITableViewController,headViewDelegate,DPRequestDelegate,MBProgressHUDDelegate{
     lazy var dataSource = []
     var page = Int()
+     var hud = MBProgressHUD()
     override func viewDidLoad() {
         super.viewDidLoad()
         //        title = "首页"
+       
         navigationItem.leftBarButtonItem = setCitySelectedBtn()
         setNavTitleView()
         let header = NSBundle.mainBundle().loadNibNamed("headView", owner: self, options: nil).last as! headView
@@ -27,9 +29,12 @@ class ShouYeTableViewController: UITableViewController,headViewDelegate,DPReques
         self.refreshControl?.tintColor = UIColor.redColor()
         self.refreshControl?.addTarget(self, action: "pullDownRefresh", forControlEvents: UIControlEvents.ValueChanged)
         
-        
         //上拉加载
-        self.tableView.footer = MJRefreshAutoFooter.
+        
+        //
+       hud.delegate = self
+        hud.backgroundColor = UIColor.redColor()
+        self.view.addSubview(hud)
     }
     
     
@@ -45,7 +50,9 @@ class ShouYeTableViewController: UITableViewController,headViewDelegate,DPReques
     //MARK:网络请求
     func requestData(){
         let dian = DPAPI()
-        var params = ["city":"沧州"] as NSMutableDictionary
+//        hud.hidden = false
+        hud.labelText = "正在加载"
+        var params = ["city":"亳州"] as NSMutableDictionary
         dian.requestWithURL("v1/deal/find_deals", params: params, delegate: self)
     }
     
@@ -65,13 +72,47 @@ class ShouYeTableViewController: UITableViewController,headViewDelegate,DPReques
         print(someThing!)
         print(dataSource.count)
         self.tableView.reloadData()
-        
+//        hud.hidden = true
     }
     
     
     //MARK:headViewDelegate
     func clickedAtNum(clicked: Int) {
+        //1.设置self.tabBarController.tabBar.hidden=YES;
+        self.tabBarController!.tabBar.hidden = true
+        //2.如果在push跳转时需要隐藏tabBar，设置self.hidesBottomBarWhenPushed=YES;
+        self.hidesBottomBarWhenPushed = true
+        let nextController = CategoryTableViewController()
+        self.navigationController?.pushViewController(nextController, animated: true)
+        self.hidesBottomBarWhenPushed = false;
+        //并在push后设置self.hidesBottomBarWhenPushed=NO;
+        //这样back回来的时候，tabBar会恢复正常显示。
         print("\(clicked)")
+        
+        switch clicked{
+        case 1000:
+            nextController.category = "1000"
+        case 1001:
+            nextController.category = "1001"
+        case 1002:
+            nextController.category = "1002"
+        case 1003:
+            nextController.category = "1003"
+        case 1004:
+            nextController.category = "1004"
+        case 1005:
+            nextController.category = "1005"
+        case 1006:
+            nextController.category = "1006"
+        case 1007:
+            nextController.category = "1007"
+        
+        default :
+            nextController.category = "全部"
+        }
+        
+        
+        
     }
     
     
