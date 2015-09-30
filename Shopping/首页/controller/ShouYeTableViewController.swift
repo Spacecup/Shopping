@@ -8,8 +8,9 @@
 
 import UIKit
 
-class ShouYeTableViewController: UITableViewController,headViewDelegate{
-    
+class ShouYeTableViewController: UITableViewController,headViewDelegate,DPRequestDelegate{
+    lazy var dataSource = []
+    var page = Int()
     override func viewDidLoad() {
         super.viewDidLoad()
         //        title = "首页"
@@ -20,22 +21,69 @@ class ShouYeTableViewController: UITableViewController,headViewDelegate{
         
         header.delegate = self
         
+        requestData()
+        //下拉刷新
+        self.refreshControl = UIRefreshControl()
+        self.refreshControl?.tintColor = UIColor.redColor()
+        self.refreshControl?.addTarget(self, action: "pullDownRefresh", forControlEvents: UIControlEvents.ValueChanged)
+        
+        
+        //上拉加载
+        self.tableView.footer = MJRefreshAutoFooter.
     }
     
     
+    //MARK:pullDownRefresh
+    func pullDownRefresh(){
+        self.refreshControl?.attributedTitle = NSAttributedString(string: "刷新ing")
+        requestData()
+        self.tableView.reloadData()
+        self.refreshControl?.endRefreshing()
+    }
+    
+    
+    //MARK:网络请求
+    func requestData(){
+        let dian = DPAPI()
+        var params = ["city":"沧州"] as NSMutableDictionary
+        dian.requestWithURL("v1/deal/find_deals", params: params, delegate: self)
+    }
+    
+    
+    //MARK:DPRequestDelegate
+    func request(request: DPRequest!, didFailWithError error: NSError!) {
+        print(error)
+    }
+    
+    
+    func request(request: DPRequest!, didFinishLoadingWithResult result: AnyObject!) {
+        let direct = result as! NSDictionary
+        var someThing = direct["deals"] as? NSArray
+        dataSource = someThing!
+        
+        
+        print(someThing!)
+        print(dataSource.count)
+        self.tableView.reloadData()
+        
+    }
+    
+    
+    //MARK:headViewDelegate
     func clickedAtNum(clicked: Int) {
         print("\(clicked)")
     }
     
+    
+    //MARK:设置主页左上方选择城市的按钮
     func setCitySelectedBtn()->UIBarButtonItem{
-        //设置主页左上方选择城市的按钮
         let cityBtn = UIButton.buttonWithType(UIButtonType.Custom) as! UIButton
         
-        var imageV = UIImageView(image:UIImage(named: "首页_06.png")) as UIImageView
+        let imageV = UIImageView(image:UIImage(named: "首页_06.png")) as UIImageView
         imageV.frame = CGRectMake(30, 8, 12, 12)
         cityBtn.addSubview(imageV)
         
-        var nameLabel = UILabel()
+        let nameLabel = UILabel()
         nameLabel.text = "默认"
         nameLabel.font = UIFont.systemFontOfSize(15)
         nameLabel.frame = CGRectMake(0, 5, 50, 20)
@@ -49,20 +97,18 @@ class ShouYeTableViewController: UITableViewController,headViewDelegate{
         return cityBtnItem
     }
     
+    
+    //设置主页左上方选择城市的按钮
     func citySelectedBtn() {
         print("你点击了城市选择的按钮\n")
-        
-        //设置主页左上方选择城市的按钮
         
         
     }
     
     
-    
-    
-    
+    //设置首页导航栏的中间的视图
     func setNavTitleView(){
-        //设置首页导航栏的中间的视图
+        
         let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 35, height: 25))
         imageView.contentMode = .ScaleAspectFit
         let image = UIImage(named: "首页0_03.png")
@@ -71,10 +117,7 @@ class ShouYeTableViewController: UITableViewController,headViewDelegate{
         navigationItem.titleView = imageView
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    
     
     override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         
@@ -84,39 +127,21 @@ class ShouYeTableViewController: UITableViewController,headViewDelegate{
     }
     
     
-    // MARK: - Table view data source
-    
-    
-    //    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-    //        // #warning Potentially incomplete method implementation.
-    //        // Return the number of sections.
-    //        return 0
-    //    }
-    
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete method implementation.
-        // Return the number of rows in the section.
-        return 5
+        return dataSource.count
     }
-    
-    
     
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-//        let identify = "indetify" as String
-//        
-//        let cell = tableView.dequeueReusableCellWithIdentifier(identify, forIndexPath: indexPath) as! UITableViewCell
-//        
-
-        let cell = TableViewCell
-//        cell.textLabel!.text = "swift cell \(indexPath.row)"
-        
+        let cell = NSBundle.mainBundle().loadNibNamed("dealsViewCell", owner: self, options: nil).last as! dealsViewCell
+        cell.data = dataSource[indexPath.row] as! NSDictionary
         return cell
-        // Configure the cell...
         
-      
     }
     
+    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 120
+    }
     
     /*
     // Override to support conditional editing of the table view.
