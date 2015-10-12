@@ -14,7 +14,6 @@ class ShouYeTableViewController: UITableViewController,headViewDelegate,DPReques
      var hud = MBProgressHUD()
     override func viewDidLoad() {
         super.viewDidLoad()
-        //        title = "首页"
        
         navigationItem.leftBarButtonItem = setCitySelectedBtn()
         setNavTitleView()
@@ -30,15 +29,21 @@ class ShouYeTableViewController: UITableViewController,headViewDelegate,DPReques
         self.refreshControl?.addTarget(self, action: "pullDownRefresh", forControlEvents: UIControlEvents.ValueChanged)
         
         //上拉加载
-        
-        //
+        //        self.tableView.add
        hud.delegate = self
         hud.backgroundColor = UIColor.redColor()
         self.view.addSubview(hud)
+        
+        print(musicList)
     }
     
+    lazy var musicList: NSArray = {
+//        return Cities.getCitys()
+        return CityGroups.getCitys()
+        }()
     
-    //MARK:pullDownRefresh
+    
+    //MARK:下拉刷新
     func pullDownRefresh(){
         self.refreshControl?.attributedTitle = NSAttributedString(string: "刷新ing")
         requestData()
@@ -69,7 +74,7 @@ class ShouYeTableViewController: UITableViewController,headViewDelegate,DPReques
         dataSource = someThing!
         
         
-        print(someThing!)
+//        print(someThing!)
         print(dataSource.count)
         self.tableView.reloadData()
 //        hud.hidden = true

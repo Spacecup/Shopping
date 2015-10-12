@@ -27,6 +27,12 @@
 		8EA54BD11BBB779300ACB744 /* YYHRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA54BC91BBB779300ACB744 /* YYHRequest.swift */; };
 		8EA54BD41BBBB5E400ACB744 /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA54BD21BBBB5E400ACB744 /* CategoryTableViewController.swift */; };
 		8EA54BD51BBBB5E400ACB744 /* CategoryTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EA54BD31BBBB5E400ACB744 /* CategoryTableViewController.xib */; };
+		8EA724151BCBA2E500E017E2 /* categories.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8EA724111BCBA2E500E017E2 /* categories.plist */; };
+		8EA724161BCBA2E500E017E2 /* cities.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8EA724121BCBA2E500E017E2 /* cities.plist */; };
+		8EA724171BCBA2E500E017E2 /* cityGroups.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8EA724131BCBA2E500E017E2 /* cityGroups.plist */; };
+		8EA724181BCBA2E500E017E2 /* sorts.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8EA724141BCBA2E500E017E2 /* sorts.plist */; };
+		8EA7241A1BCBA50D00E017E2 /* Cities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA724191BCBA50D00E017E2 /* Cities.swift */; };
+		8EA7241C1BCBB11C00E017E2 /* CityGroups.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA7241B1BCBB11C00E017E2 /* CityGroups.swift */; };
 		8ED7772B1BB388070029A958 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED7772A1BB388070029A958 /* AppDelegate.swift */; };
 		8ED777301BB388070029A958 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8ED7772E1BB388070029A958 /* Main.storyboard */; };
 		8ED777321BB388080029A958 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8ED777311BB388070029A958 /* Images.xcassets */; };
@@ -147,13 +153,19 @@
 		8EA54BC91BBB779300ACB744 /* YYHRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYHRequest.swift; sourceTree = "<group>"; };
 		8EA54BD21BBBB5E400ACB744 /* CategoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CategoryTableViewController.swift; path = "首页/controller/CategoryTableViewController.swift"; sourceTree = "<group>"; };
 		8EA54BD31BBBB5E400ACB744 /* CategoryTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CategoryTableViewController.xib; path = "首页/controller/CategoryTableViewController.xib"; sourceTree = "<group>"; };
-		8ED777251BB388070029A958 /* Shopping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shopping.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EA724111BCBA2E500E017E2 /* categories.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = categories.plist; sourceTree = "<group>"; };
+		8EA724121BCBA2E500E017E2 /* cities.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cities.plist; sourceTree = "<group>"; };
+		8EA724131BCBA2E500E017E2 /* cityGroups.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cityGroups.plist; sourceTree = "<group>"; };
+		8EA724141BCBA2E500E017E2 /* sorts.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = sorts.plist; sourceTree = "<group>"; };
+		8EA724191BCBA50D00E017E2 /* Cities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cities.swift; sourceTree = "<group>"; };
+		8EA7241B1BCBB11C00E017E2 /* CityGroups.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityGroups.swift; sourceTree = "<group>"; };
+		8ED777251BB388070029A958 /* 我的测试.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "我的测试.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ED777291BB388070029A958 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8ED7772A1BB388070029A958 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8ED7772F1BB388070029A958 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8ED777311BB388070029A958 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8ED777341BB388080029A958 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		8ED7773A1BB388080029A958 /* ShoppingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShoppingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8ED7773A1BB388080029A958 /* 我的测试Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "我的测试Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ED7773F1BB388080029A958 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8ED777401BB388080029A958 /* ShoppingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingTests.swift; sourceTree = "<group>"; };
 		8ED777521BB38D230029A958 /* TuanGouTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TuanGouTableViewController.swift; path = "团购/TuanGouTableViewController.swift"; sourceTree = "<group>"; };
@@ -275,6 +287,7 @@
 		8E02DDAE1BBA6E1300F2EF9B /* 三方 */ = {
 			isa = PBXGroup;
 			children = (
+				8EA724101BCBA2E500E017E2 /* PlistData */,
 				8E02DDAF1BBA6E6100F2EF9B /* dianpingapi */,
 			);
 			name = "三方";
@@ -348,8 +361,21 @@
 				8EA54BC71BBB779300ACB744 /* UIViewExt.swift */,
 				8EA54BC81BBB779300ACB744 /* YRHttpRequest.swift */,
 				8EA54BC91BBB779300ACB744 /* YYHRequest.swift */,
+				8EA724191BCBA50D00E017E2 /* Cities.swift */,
+				8EA7241B1BCBB11C00E017E2 /* CityGroups.swift */,
 			);
 			path = util;
+			sourceTree = "<group>";
+		};
+		8EA724101BCBA2E500E017E2 /* PlistData */ = {
+			isa = PBXGroup;
+			children = (
+				8EA724111BCBA2E500E017E2 /* categories.plist */,
+				8EA724121BCBA2E500E017E2 /* cities.plist */,
+				8EA724131BCBA2E500E017E2 /* cityGroups.plist */,
+				8EA724141BCBA2E500E017E2 /* sorts.plist */,
+			);
+			path = PlistData;
 			sourceTree = "<group>";
 		};
 		8ED7771C1BB388070029A958 = {
@@ -366,8 +392,8 @@
 		8ED777261BB388070029A958 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8ED777251BB388070029A958 /* Shopping.app */,
-				8ED7773A1BB388080029A958 /* ShoppingTests.xctest */,
+				8ED777251BB388070029A958 /* 我的测试.app */,
+				8ED7773A1BB388080029A958 /* 我的测试Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -560,9 +586,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8ED777241BB388070029A958 /* Shopping */ = {
+		8ED777241BB388070029A958 /* 我的测试 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8ED777441BB388080029A958 /* Build configuration list for PBXNativeTarget "Shopping" */;
+			buildConfigurationList = 8ED777441BB388080029A958 /* Build configuration list for PBXNativeTarget "我的测试" */;
 			buildPhases = (
 				6D35EBE7ACAEEAA5DDB4DDC3 /* Check Pods Manifest.lock */,
 				8ED777211BB388070029A958 /* Sources */,
@@ -575,14 +601,14 @@
 			);
 			dependencies = (
 			);
-			name = Shopping;
+			name = "我的测试";
 			productName = Shopping;
-			productReference = 8ED777251BB388070029A958 /* Shopping.app */;
+			productReference = 8ED777251BB388070029A958 /* 我的测试.app */;
 			productType = "com.apple.product-type.application";
 		};
-		8ED777391BB388080029A958 /* ShoppingTests */ = {
+		8ED777391BB388080029A958 /* 我的测试Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8ED777471BB388080029A958 /* Build configuration list for PBXNativeTarget "ShoppingTests" */;
+			buildConfigurationList = 8ED777471BB388080029A958 /* Build configuration list for PBXNativeTarget "我的测试Tests" */;
 			buildPhases = (
 				8ED777361BB388080029A958 /* Sources */,
 				8ED777371BB388080029A958 /* Frameworks */,
@@ -593,9 +619,9 @@
 			dependencies = (
 				8ED7773C1BB388080029A958 /* PBXTargetDependency */,
 			);
-			name = ShoppingTests;
+			name = "我的测试Tests";
 			productName = ShoppingTests;
-			productReference = 8ED7773A1BB388080029A958 /* ShoppingTests.xctest */;
+			productReference = 8ED7773A1BB388080029A958 /* 我的测试Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -616,7 +642,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 8ED777201BB388070029A958 /* Build configuration list for PBXProject "Shopping" */;
+			buildConfigurationList = 8ED777201BB388070029A958 /* Build configuration list for PBXProject "我的测试" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -629,8 +655,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8ED777241BB388070029A958 /* Shopping */,
-				8ED777391BB388080029A958 /* ShoppingTests */,
+				8ED777241BB388070029A958 /* 我的测试 */,
+				8ED777391BB388080029A958 /* 我的测试Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -675,6 +701,7 @@
 				8ED777A11BB391D20029A958 /* 团购_全城_03@2x.png in Resources */,
 				8ED777A41BB391D20029A958 /* 团购_全部分类_美食_05@2x.png in Resources */,
 				8ED777351BB388080029A958 /* LaunchScreen.xib in Resources */,
+				8EA724171BCBA2E500E017E2 /* cityGroups.plist in Resources */,
 				8ED777C41BB391D20029A958 /* 我的－登录_10@2x.png in Resources */,
 				8ED777AD1BB391D20029A958 /* 团购_全部分类_美食_40@2x.png in Resources */,
 				8ED777C61BB391D20029A958 /* 我的－登录_15@2x.png in Resources */,
@@ -686,9 +713,11 @@
 				8ED777E01BB391D20029A958 /* 首页_GPS定位系统_03@2x.png in Resources */,
 				8ED777A51BB391D20029A958 /* 团购_全部分类_美食_11@2x.png in Resources */,
 				8ED777AF1BB391D20029A958 /* 团购_全部分类_美食_47@2x.png in Resources */,
+				8EA724161BCBA2E500E017E2 /* cities.plist in Resources */,
 				8ED777B81BB391D20029A958 /* 引导页－1.jpg in Resources */,
 				8ED777C51BB391D20029A958 /* 我的－登录_12@2x.png in Resources */,
 				8ED777D21BB391D20029A958 /* 设置_18@2x.png in Resources */,
+				8EA724181BCBA2E500E017E2 /* sorts.plist in Resources */,
 				8ED777D11BB391D20029A958 /* 设置_16@2x.png in Resources */,
 				8ED777D81BB391D20029A958 /* 首页_13@2x.png in Resources */,
 				8ED777B71BB391D20029A958 /* 屏幕快照 2015-03-28 下午3.25.16.png in Resources */,
@@ -702,6 +731,7 @@
 				8ED777B61BB391D20029A958 /* 团购_商户分类stare4@2x.png in Resources */,
 				8ED777B41BB391D20029A958 /* 团购_商户分类stare2@2x.png in Resources */,
 				8ED777A61BB391D20029A958 /* 团购_全部分类_美食_12@2x.png in Resources */,
+				8EA724151BCBA2E500E017E2 /* categories.plist in Resources */,
 				8E7C3A6A1BB4DA62007AF11D /* TableViewCell.xib in Resources */,
 				8ED777B21BB391D20029A958 /* 团购_商户分类star5@2x.png in Resources */,
 				8ED777DC1BB391D20029A958 /* 首页_17@2x.png in Resources */,
@@ -782,6 +812,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EA7241A1BCBA50D00E017E2 /* Cities.swift in Sources */,
 				8E02DDB51BBA6E6100F2EF9B /* DPAPI.m in Sources */,
 				8ED777E41BB392530029A958 /* MainNavigationController.swift in Sources */,
 				8ED777531BB38D230029A958 /* TuanGouTableViewController.swift in Sources */,
@@ -800,6 +831,7 @@
 				8EA54BD41BBBB5E400ACB744 /* CategoryTableViewController.swift in Sources */,
 				8ED777ED1BB3EE9A0029A958 /* headView.swift in Sources */,
 				8EA54BBF1BBB70BD00ACB744 /* dealsViewCell.swift in Sources */,
+				8EA7241C1BCBB11C00E017E2 /* CityGroups.swift in Sources */,
 				8E7C3A6D1BB4DC12007AF11D /* BusinessInfo.swift in Sources */,
 				8EA54BD01BBB779300ACB744 /* YRHttpRequest.swift in Sources */,
 				8ED777F41BB3FF2C0029A958 /* ShouYeTableViewController.swift in Sources */,
@@ -821,7 +853,7 @@
 /* Begin PBXTargetDependency section */
 		8ED7773C1BB388080029A958 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8ED777241BB388070029A958 /* Shopping */;
+			target = 8ED777241BB388070029A958 /* 我的测试 */;
 			targetProxy = 8ED7773B1BB388080029A958 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -936,7 +968,7 @@
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Shopping/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "我的测试";
 				SWIFT_OBJC_BRIDGING_HEADER = "Shopping/Shopping-Bridging-Header.h";
 			};
 			name = Debug;
@@ -950,7 +982,7 @@
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Shopping/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "我的测试";
 				SWIFT_OBJC_BRIDGING_HEADER = "Shopping/Shopping-Bridging-Header.h";
 			};
 			name = Release;
@@ -969,7 +1001,7 @@
 				);
 				INFOPLIST_FILE = ShoppingTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "我的测试Tests";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Shopping.app/Shopping";
 			};
 			name = Debug;
@@ -984,7 +1016,7 @@
 				);
 				INFOPLIST_FILE = ShoppingTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "我的测试Tests";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Shopping.app/Shopping";
 			};
 			name = Release;
@@ -992,7 +1024,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8ED777201BB388070029A958 /* Build configuration list for PBXProject "Shopping" */ = {
+		8ED777201BB388070029A958 /* Build configuration list for PBXProject "我的测试" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8ED777421BB388080029A958 /* Debug */,
@@ -1001,7 +1033,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8ED777441BB388080029A958 /* Build configuration list for PBXNativeTarget "Shopping" */ = {
+		8ED777441BB388080029A958 /* Build configuration list for PBXNativeTarget "我的测试" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8ED777451BB388080029A958 /* Debug */,
@@ -1010,7 +1042,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8ED777471BB388080029A958 /* Build configuration list for PBXNativeTarget "ShoppingTests" */ = {
+		8ED777471BB388080029A958 /* Build configuration list for PBXNativeTarget "我的测试Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8ED777481BB388080029A958 /* Debug */,

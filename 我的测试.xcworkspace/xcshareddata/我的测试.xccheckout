@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B57913AC-F39D-4771-BB5A-D72784B915F2</string>
+	<key>IDESourceControlProjectName</key>
+	<string>我的测试</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>DBDF45C66BDC2E2050B9D0F30775A8BE90851565</key>
+		<string>https://github.com/mudy1993/Shopping.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>我的测试.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>DBDF45C66BDC2E2050B9D0F30775A8BE90851565</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/mudy1993/Shopping.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>DBDF45C66BDC2E2050B9D0F30775A8BE90851565</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>DBDF45C66BDC2E2050B9D0F30775A8BE90851565</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Shopping</string>
+		</dict>
+	</array>
+</dict>
+</plist>
